@@ -1,1 +1,42 @@
+# Rule-Based Chatbot for CODSOFT Internship
+# Task 1: Chatbot with predefined responses
+
+def chatbot():
+    print("🤖 Chatbot: Hello! I am a rule-based chatbot.")
+    print("🤖 Chatbot: Type 'help' to see what I can do.")
+    print("🤖 Chatbot: Type 'bye' to exit.\n")
+
+    while True:
+        user_input = input("You: ").lower().strip()
+
+        if user_input in ["hello", "hi", "hey"]:
+            print("🤖 Chatbot: Hello! How can I help you today?")
+
+        elif user_input == "how are you":
+            print("🤖 Chatbot: I'm doing great! Thanks for asking 😊")
+
+        elif user_input == "who are you":
+            print("🤖 Chatbot: I am a simple rule-based chatbot created using Python.")
+
+        elif user_input == "what is ai":
+            print("🤖 Chatbot: AI stands for Artificial Intelligence, which enables machines to think and learn.")
+
+        elif user_input == "help":
+            print("🤖 Chatbot: You can try asking:")
+            print(" - hello")
+            print(" - how are you")
+            print(" - who are you")
+            print(" - what is ai")
+            print(" - bye")
+
+        elif user_input in ["bye", "exit", "quit"]:
+            print("🤖 Chatbot: Goodbye! Have a great day 👋")
+            break
+
+        else:
+            print("🤖 Chatbot: Sorry, I didn't understand that. Type 'help' to see options.")
+
+
+if __name__ == "__main__":
+    chatbot()
 
